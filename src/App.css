@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    background-image: url(https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 1em;
+    font-family: Poiret One;
+    font-size: 60px;
+    width: auto;
+}
+
+
+.form__info{
+    display: flex;
+    margin: .5em;
+}
+
+.form__btn {
+    font-family: Poiret One;
+    margin: 4px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+}
+
+.form__btn:hover {
+    background-color: #555555;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.form__name {
+    font-family: Poiret One;
+    font-size: 38px;
+    padding-right: 2em;
+    padding-left: .5em;
+    margin-left: .5em;
+    border-radius: 8px;
+    opacity: 0.4;
+}
+
+.header {
+    font-family: Poiret One;
+    padding: 30px;
+    text-align: center;
+    background: #6f7177;
+    color: white;
+    font-size: 30px;
+}
+
+.weather-article {
+    display: flex;
+    height: 400px;
+    width: auto;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    font-family: Poiret One;
+    margin-top: 4em;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 4em;
+}
+
+
+.weatherIcon {
+    flex: 1 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100px;
+}
+
+.weather-article__icon {
+    padding-top: 30px;
+}
+
+.weatherInfo {
+    flex: 0 0 70%;
+    height: 40%;
+    background: #080705;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.temperature{
+    flex: 0 0 40%;
+    width: 100%;
+    font-size: 65px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.description{
+    flex: 0 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+    
+.weatherCondition {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 100;
+}
+    
+.place{
+    font-size: 22px;
+}
+
+.date{
+  flex: 0 0 30%;
+  height: 40%;
+  background: #70C1B3;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.form__form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width:641px) {
+    .weather-article {
+        height: 400px;
+        margin-top: 2em;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2em;
+    }
+
+
+    .form__name {
+        font-size: 20px;
+        padding-right: .5em;
+    }
+
+    body {
+        background-color: #333333;
+        background-image: none;
+    }
+
+    .form {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        font-size: 40px;
+    }
+
+    .place{
+        font-size: 18px;
+    }
+
+    .weatherCondition {
+        font-size: 25px;
+    }
+
+    .temperature{
+        font-size: 46px;
+      }
+      
+    
+}
+
+@media (min-width:642px) and (max-width:1281px) {
+    body {
+        background-image: none;
+    }
+
+    .weather-article {
+        height: 500px;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 4em;
+    }
+}
