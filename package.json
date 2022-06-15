@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://anotherweather.herokuapp.com/",
+  "proxy": "https://agile-chamber-37214.herokuapp.com",
   "eslintConfig": {
     "extends": [
       "react-app",
