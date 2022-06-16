@@ -20,7 +20,7 @@ const App = () => {
     if (cityName === "") {
       return
     }
-    fetch(`/api?query=${cityName}`)
+    fetch(`api/?query=${cityName}`)
       .then((res) => res.json())
       .then((response) => setData(response));
   }, [cityName]);
